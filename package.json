@@ -53,6 +53,6 @@
     "phantomjs": "^1.9.18"
   },
   "scripts": {
-    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+    "test": "grunt karma:continuous"
   }
 }
