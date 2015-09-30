@@ -68,6 +68,12 @@ module.exports = function(grunt) {
             tasks: ["default"]
         },
 
+        karma: {
+            unit: {
+                configFile: 'karma.conf.js'
+            }
+        },
+
         "http-server": {
             dev: {
                 root: ".",
@@ -87,10 +93,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-http-server');
 
     grunt.registerTask("build", ["concat", "uglify", "cssmin"]);
     grunt.registerTask("default", ["jshint", "build", "http-server"]);
-    grunt.registerTask("travis", ["default"]);
+    grunt.registerTask("travis", ["build", "karma"]);
 
 };
