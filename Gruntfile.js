@@ -96,8 +96,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-http-server');
 
-    grunt.registerTask("build", ["concat", "uglify", "cssmin"]);
-    grunt.registerTask("default", ["jshint", "build", "http-server"]);
-    grunt.registerTask("travis", ["build", "karma"]);
+    grunt.registerTask("build", ["jshint", "concat", "uglify", "cssmin"]);
+    grunt.registerTask("default", ["build", "http-server"]);
+    grunt.registerTask("travis", ["build"]);
 
 };
