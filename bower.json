@@ -1,0 +1,19 @@
+{
+	"name": "jquery-form-designer",
+	"version": "0.0.1",
+	"homepage": "http://github.com/diegodrumond/form-designer",
+	"authors": [
+		"Diego Drumond <diegodrumond@hotmail.com>"
+	],
+	"description": "Bootstrap form designer jQuery plugin.",
+	"main": "src/jquery.form-designer.js",
+	"keywords": [
+		"jquery",
+		"plugin",
+		"bootstrap",
+		"form-designer",
+		"jquery-plugin",
+		"jquery-form-designer"
+	],
+	"license": "Apache License, version 2.0"
+}

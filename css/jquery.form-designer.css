@@ -1,0 +1,12 @@
+.fd-workspace, .fd-workspace .fd-canvas {
+	padding: 20px;
+}
+
+.fd-workspace .fd-nav .tab-control {
+    float: right;
+    line-height: 38px;
+}
+
+.fd-workspace.fd-edit-mode .row {
+	background-color: silver;
+}

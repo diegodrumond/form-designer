@@ -1,2 +1,2 @@
-# form-designer
-JQuery plugin for build boostrap forms
+# Form Designer
+jQuery plugin for build boostrap forms
